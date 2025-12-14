@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom & Blossom – Flower Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Battambang:wght@100;300;400;700;900&family=Dangrek&family=Moul&family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Asa & Bloom</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Flowers</a>
+    <a href="#plushies">Plushies</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div id="popup" class="popup">
+  <span id="popup-text">Added to cart</span>
+</div>
+
+<button
+  type="button"
+  class="add-cart"
+  onclick="addToCart('Rose Bouquet', 35)"
+>
+  Add to Cart
+</button>
+
+<div class="cart"><i class='bx bx-cart'></i></div>
+
+<div class="main" id="home">
+  <div>
+    <h2>Crochet & Plushies </h2>
+    <button onclick="scrollToShop()">Shop Now</button>
+  </div>
+</div>
+
+<section id="shop">
+  <h2 class="title">Our Crochets</h2>
+  <div class="products">
+    <div class="card">
+      <img src="rose.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Red Rose Bouquet</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Red Roses')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="tulip.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Tulips Bouquet</h3>
+        <p>$12</p>
+        <button onclick="addToCart('Tulips')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="lily.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>White Lilies Bouquet</h3>
+        <p>$18</p>
+        <button onclick="addToCart('White Lilies')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="sunflower.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Sunflower Bouquet</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Red Roses')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="orchid.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Orchid Bouquet</h3>
+        <p>$12</p>
+        <button onclick="addToCart('Tulips')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="daisy.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Daisy Bouquet</h3>
+        <p>$18</p>
+        <button onclick="addToCart('White Lilies')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="carnation.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Carnation Bouquet</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Red Roses')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="peony.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Peony Bouquet</h3>
+        <p>$12</p>
+        <button onclick="addToCart('Tulips')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="hydrangea.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Hydrangea Bouquet</h3>
+        <p>$18</p>
+        <button onclick="addToCart('White Lilies')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="chrysanthemom.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Chrysanthemum Bouquet</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Red Roses')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="lavender.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Lavender Bouquet</h3>
+        <p>$12</p>
+        <button onclick="addToCart('Tulips')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="lotus.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Lotus Bouquet</h3>
+        <p>$18</p>
+        <button onclick="addToCart('White Lilies')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section id="plushies">
+  <h2 class="title">Our Plushies</h2>
+  <div class="products">
+    <div class="card">
+      <img src="csm1.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Power</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Red Roses')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="csm2.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Makima</h3>
+        <p>$12</p>
+        <button onclick="addToCart('Tulips')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="csm3.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Reze</h3>
+        <p>$18</p>
+        <button onclick="addToCart('White Lilies')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="csm4.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Aki</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Red Roses')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="csm5.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Kobeni</h3>
+        <p>$12</p>
+        <button onclick="addToCart('Tulips')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="csm6.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Quanxi</h3>
+        <p>$18</p>
+        <button onclick="addToCart('White Lilies')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="csm7.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Hemino</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Red Roses')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="csm8.png">
+      <button class="fav-btn" onclick="toggleFav(this)">♥</button>
+      <div class="card-content">
+        <h3>Miyabi</h3>
+        <p>$12</p>
+        <button onclick="addToCart('Tulips')">Add to Cart</button>
+      </div>
+    </div>
+  </div> 
+</section>
+<hr>
+
+<section id="about">
+  <h2 class="title">About Us</h2>
+  <div class="about">
+    <p>
+      Asa & Bloom ផ្តល់ជូនតុក្កតាទន់ៗដ៏គួរឱ្យស្រឡាញ់ និងផ្កាក្រណាត់ដ៏ស្រស់ស្អាត សម្រាប់ជូន​សង្សា​ មិត្តភក្តិ នឹងមនុស្សជុំវិញខ្លួនអ្នកដើម្បីបង្ហាញក្តីស្រឡាញ់ ក្នុងថ្ងៃខួបកំណើត និងពេលវេលាពិសេសៗ។ យើងយកចិត្តទុកដាក់លើគុណភាព សោភ័ណភាព និងទំនុកចិត្តជូនម៉ូយៗ។
+    </p>
+  </div>
+</section>
+
+<hr>
+
+<section id="contact">
+  <h2 class="title">Contact Us</h2>
+  <div class="contact">
+    <p>Email: asabloom@gmail.com</p>
+    <p>Phone: +85587452950</p>
+    <p>Location: Battambang</p>
+  </div>
+</section>
+<hr>
+<section id="socials">
+  <h2 class="title">Our Socials</h2>
+  <div class="icons">
+    <li><a href="www.facebook.com"><i class='bx bxl-facebook-square'></i>Asa & Bloom</a></li>
+    <li><a href="www.instagram.com"><i class='bx bxl-instagram-alt' ></i>Asa & Bloom</a></li>
+    <li><a href="www.tiktok.com"><i class='bx bxl-tiktok' ></i>@AsaBloom</a></li>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>© 2025 Asa & Bloom </p><p class="kh"> រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+  <p class="kh">ផ្កាក្រណាត់ និងតុក្កតាទន់ៗ ដើម្បីបង្ហាញក្តីស្រឡាញ់ និងអនុស្សាវរីយ៍ដ៏មានតម្លៃ 🌸</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
